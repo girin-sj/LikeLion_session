@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "KaiseiDecol-Regular";
+    src: url("../../public/font/KaiseiDecol-Regular.ttf") format("truetype");
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    font-size: 22px;
+    font-family: "KaiseiDecol-Regular";
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  header[data-page="mypage"] {
+    background-color: #e7eff5;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  header[data-page="mypage"] .logo a {
+    color: #3a3a3a;
+  }
+  
+  header[data-page="mypage"] .nav-menu a {
+    color: #b8bac6;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu a:focus,
+  .nav-menu a.active {
+    color: #3a3a3a;
+  }
+  
+  header[data-page="mypage"] .nav-menu a:hover,
+  header[data-page="mypage"] .nav-menu a:hover,
+  header[data-page="mypage"] .nav-menu a.active {
+    color: #3a3a3a;
+  }

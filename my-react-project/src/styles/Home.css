@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "KaiseiDecol-Regular";
+    src: url("../../public/font/KaiseiDecol-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumMyeongjo";
+    src: url("../../public/font/NanumMyeongjo-Regular.ttf") format("truetype");
+}
+
+/* Home */
+.home-container {
+    width: 100%;
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    width: 100%;
+    font-family: 'KaiseiDecol-Regular';
+}
+
+.menu-section {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+.menu-section::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    border: 2px solid white;
+}
+
+.menu-perfume {
+    width: 100%;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+}
+
+.text-perfume {
+    left: 28px;
+    bottom: 28px;
+}
+
+.text-diffuser {
+    right: 28px;
+    bottom: 28px;
+}
+
+/* Banner */
+.banner-container {
+    width: 100%;
+}
+
+/* Info Component */
+.info-container {
+    padding: 128px 164px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-left-section {
+    display:flex;
+    position: relative;
+}
+
+.info-right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.info-img-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+  
+.about-img {
+    background-color: transparent;
+    /* z-index: 1; */
+}
+
+.info-title {
+    font-family: 'NanumMyeongjo';
+    font-size: 2.5rem;
+}
+
+.info-title.about-us {
+    writing-mode: vertical-rl;
+}
+
+.info-description {
+    font-family: 'NanumMyeongjo';
+    font-size: 1.2rem;
+}
